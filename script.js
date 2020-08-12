@@ -1,4 +1,3 @@
-// header scrolling effect
 $(window).on("scroll", function () {
   if ($(window).scrollTop()) {
     $("header").addClass("nav-show");
@@ -7,7 +6,6 @@ $(window).on("scroll", function () {
   }
 });
 
-//hamburger
 const navSlide = () => {
   const hamburger = document.querySelector(".hamburger");
   const navbar = document.querySelector(".nav-bar");
@@ -16,7 +14,6 @@ const navSlide = () => {
   hamburger.onclick = () => {
     navbar.classList.toggle("nav-active");
 
-    //Animation links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = "";
@@ -26,7 +23,6 @@ const navSlide = () => {
         }s`;
       }
     });
-    //hamburger animation
     hamburger.classList.toggle("toggle");
   };
 };
