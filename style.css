@@ -49,7 +49,7 @@ header:hover{
 
 .logo img{
 	padding-top: 5px;
-	height: 50px;
+	height: 70px;
 	cursor: pointer;
 }
 
@@ -138,7 +138,7 @@ a.nav-link{
 	padding: 10px;
 	display: flex;
 	position: center;
-    align-items: space-around;
+    align-items: center;
 	justify-content:center;
 }
 
@@ -174,7 +174,8 @@ a.nav-link{
 	color: var(--main-fonts-color);
 }
 #projects h3{
-    padding-top: 70px;
+    padding-top: 50px;
+
 }
 #projects p{
 	font-family: var(--main-font-family);
@@ -182,10 +183,20 @@ a.nav-link{
 	padding: 10px;
 }
 
+.work-box {
+	display: flex;
+}
+
+@media (max-width: 800px) {
+	.work-box {
+		flex-direction: column;
+	}
+}
+
 .work{
 	display: flex; 
-	flex: 1;
-    flex-wrap: wrap;
+	flex: 2;
+    flex-wrap: nowrap;
     justify-content:center;
 	align-items: center;
 	padding: 20px;
@@ -202,8 +213,8 @@ a.nav-link{
 }
 
 .card img{
-	width: 100%;
-	height:70%;
+	width: 70%;
+	height:50%;
 	border-radius:10px 10px 0px 0px;
 }
 
